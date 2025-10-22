@@ -1,0 +1,13 @@
+[project]
+name = "screenshot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=10.4.0",
+    "requests>=2.32.3",
+    "flask>=3.0.3",
+    "schedule>=1.2.2",
+    "waitress>=3.0.2",
+]

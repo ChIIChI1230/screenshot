@@ -1,0 +1,16 @@
+{
+  "client": {
+    "server_url": "http://172.16.92.42:8000/upload",
+    "interval_seconds": 10,
+    "image_format": "JPEG",
+    "jpeg_quality": 80,
+    "save_local_copy": false,
+    "local_output_dir": "C:/Users/31330/Desktop/screenshots"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "storage_dir": "C:/Users/31330/Desktop/received_screenshots"
+  }
+}
+
