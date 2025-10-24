@@ -17,7 +17,7 @@ uv sync
 - 或使用 pip（需要自行安装依赖）：
 
 ```bash
-pip install pillow requests flask schedule
+pip install pillow requests flask schedule waitress
 ```
 
 ### 配置

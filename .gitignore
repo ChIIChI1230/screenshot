@@ -1,4 +1,6 @@
 # Python-generated files
+local_screenshots/
+client.log
 __pycache__/
 *.py[oc]
 build/

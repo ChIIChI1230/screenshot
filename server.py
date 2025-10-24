@@ -10,6 +10,7 @@ from __future__ import annotations
 """
 
 import os
+import logging
 import datetime as dt
 from pathlib import Path
 from typing import Tuple
@@ -39,6 +40,12 @@ def load_server_config() -> Tuple[str, int, Path]:
 
 
 app = Flask(__name__)
+
+
+@app.get("/health")
+def health():
+    """健康检查端点"""
+    return jsonify({"status": "ok", "message": "Server is running"}), 200
 
 
 @app.post("/upload")

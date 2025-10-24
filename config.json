@@ -1,11 +1,17 @@
 {
   "client": {
-    "server_url": "http://172.16.92.42:8000/upload",
+    "server_url": "http://127.0.0.1:8001/upload",
     "interval_seconds": 10,
     "image_format": "JPEG",
-    "jpeg_quality": 80,
+    "jpeg_quality": 96,
     "save_local_copy": false,
-    "local_output_dir": "C:/Users/31330/Desktop/screenshots"
+    "local_output_dir": "C:/Users/31330/Desktop/screenshots",
+    "max_retries": 3,
+    "retry_delay": 5,
+    "connection_timeout": 10,
+    "local_storage_dir": "local_screenshots",
+    "max_local_files": 1000,
+    "local_file_retention_hours": 24
   },
   "server": {
     "host": "0.0.0.0",
