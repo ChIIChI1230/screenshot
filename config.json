@@ -1,6 +1,6 @@
 {
   "client": {
-    "server_url": "http://127.0.0.1:8001/upload",
+    "server_url": "http://127.0.0.1:8000/upload",
     "interval_seconds": 10,
     "image_format": "JPEG",
     "jpeg_quality": 96,
@@ -15,7 +15,7 @@
   },
   "server": {
     "host": "0.0.0.0",
-    "port": 8001,
-    "storage_dir": "received_screenshots"
+    "port": 8000,
+    "storage_dir": "C:/Users/31330/Desktop/received_screenshots"
   }
 }

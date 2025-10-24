@@ -1,9 +1,23 @@
 [project]
-name = "screenshot"
+name = "screenshot-tool"
 version = "0.1.0"
-description = "Add your description here"
+description = "屏幕自动截图工具（客户端/服务器）"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    {name = "Screenshot Tool Team"}
+]
+keywords = ["screenshot", "screen-capture", "client-server", "gui"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Capture :: Screen Capture",
+    "Topic :: System :: Networking",
+]
 dependencies = [
     "pillow>=10.4.0",
     "requests>=2.32.3",
@@ -11,3 +25,23 @@ dependencies = [
     "schedule>=1.2.2",
     "waitress>=3.0.2",
 ]
+
+[project.scripts]
+screenshot-client = "screenshot_tool.gui.client_gui:main"
+screenshot-server = "screenshot_tool.gui.server_gui:main"
+screenshot-cli = "screenshot_tool.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/your-username/screenshot-tool"
+Repository = "https://github.com/your-username/screenshot-tool"
+Issues = "https://github.com/your-username/screenshot-tool/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

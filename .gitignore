@@ -1,13 +1,48 @@
 # Python-generated files
-received_screenshots/
-local_screenshots/
-client.log
+release/
 __pycache__/
 *.py[oc]
-build/
-dist/
-wheels/
 *.egg-info
+wheels/
 
 # Virtual environments
 .venv
+
+# Log files
+*.log
+client.log
+server.log
+
+# Screenshot directories
+received_screenshots/
+local_screenshots/
+
+# Build artifacts (keep in release folder)
+build/
+dist/
+*.spec
+
+# Build scripts and installers
+build.py
+build_cross.py
+build.bat
+installer.py
+update_checker.py
+version_info.json
+
+# Legacy files (can be deleted)
+client.py
+server.py
+test_gui.py
+requirements.txt
+main.py
+client_gui.py
+server_gui.py
+
+# Documentation files (keep in release folder)
+使用说明.md
+图标说明.md
+安装指南.md
+构建完成总结.md
+构建指南.md
+用户手册.md

@@ -1,0 +1,1144 @@
+2025-10-24 23:50:32,275 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:50:44,154 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:51:18,530 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:51:18,555 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:51:18,555 - screenshot_tool.core.server - INFO - 请求文件: []
+2025-10-24 23:51:18,556 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:51:18,556 - screenshot_tool.core.server - ERROR - 处理上传请求失败: test_server_simple.<locals>.<lambda>() takes 1 positional argument but 2 were given
+2025-10-24 23:51:18,558 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 59, in _handle_upload
+    if "file" not in request.files:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\soft_set\anaconda3\Lib\unittest\mock.py", line 2013, in method
+    return func(self, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: test_server_simple.<locals>.<lambda>() takes 1 positional argument but 2 were given
+
+2025-10-24 23:54:37,974 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:54:37,977 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-24 23:54:37,977 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-24 23:54:37,977 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-24 23:54:38,043 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-24 23:54:38,044 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-24 23:54:41,857 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:54:41,859 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:54:41,859 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:54:41,859 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:54:41,860 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:54:41,933 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:54:41,936 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:54:41,936 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:54:41,936 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:54:41,937 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:54:51,733 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:54:51,736 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:54:51,736 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:54:51,736 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:54:51,737 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:54:51,779 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:54:51,781 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:54:51,782 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:54:51,782 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:54:51,782 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:55:35,372 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:55:35,374 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-24 23:55:35,374 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-24 23:55:35,374 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-24 23:55:35,424 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-24 23:55:35,427 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-24 23:55:37,933 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:55:37,936 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:55:37,936 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:55:37,936 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:55:37,937 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:55:37,959 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:55:37,962 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:55:37,962 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:55:37,963 - screenshot_tool.core.server - ERROR - 处理上传请求失败: unsupported operand type(s) for /: 'str' and 'str'
+2025-10-24 23:55:37,963 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 73, in _handle_upload
+    date_dir = self.config.storage_dir / now.strftime("%Y-%m-%d")
+               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+2025-10-24 23:57:43,027 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:57:43,029 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-24 23:57:43,032 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-24 23:57:43,035 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-24 23:57:43,111 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-24 23:57:43,113 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-24 23:58:23,388 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:58:23,402 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:58:23,403 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:58:23,413 - screenshot_tool.core.server - ERROR - 处理上传请求失败: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:23.353188+00:00_Yinghuo.jpg'
+2025-10-24 23:58:23,421 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 86, in _handle_upload
+    file.save(str(target_path))
+  File "D:\code\vs_code\screenshot\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:23.353188+00:00_Yinghuo.jpg'
+
+2025-10-24 23:58:23,562 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:58:23,577 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:58:23,593 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:58:23,626 - screenshot_tool.core.server - ERROR - 处理上传请求失败: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:23.547359+00:00_Yinghuo.jpg'
+2025-10-24 23:58:23,639 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 86, in _handle_upload
+    file.save(str(target_path))
+  File "D:\code\vs_code\screenshot\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:23.547359+00:00_Yinghuo.jpg'
+
+2025-10-24 23:58:33,801 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:58:33,804 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:58:33,804 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:58:33,808 - screenshot_tool.core.server - ERROR - 处理上传请求失败: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:33.783909+00:00_Yinghuo.jpg'
+2025-10-24 23:58:33,809 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 86, in _handle_upload
+    file.save(str(target_path))
+  File "D:\code\vs_code\screenshot\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:33.783909+00:00_Yinghuo.jpg'
+
+2025-10-24 23:58:33,860 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:58:33,864 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:58:33,864 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:58:33,868 - screenshot_tool.core.server - ERROR - 处理上传请求失败: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:33.833399+00:00_Yinghuo.jpg'
+2025-10-24 23:58:33,869 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 86, in _handle_upload
+    file.save(str(target_path))
+  File "D:\code\vs_code\screenshot\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:33.833399+00:00_Yinghuo.jpg'
+
+2025-10-24 23:58:43,807 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-24 23:58:43,810 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-24 23:58:43,812 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-24 23:58:43,818 - screenshot_tool.core.server - ERROR - 处理上传请求失败: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:43.789942+00:00_Yinghuo.jpg'
+2025-10-24 23:58:43,824 - screenshot_tool.core.server - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\code\vs_code\screenshot\src\screenshot_tool\core\server.py", line 86, in _handle_upload
+    file.save(str(target_path))
+  File "D:\code\vs_code\screenshot\.venv\Lib\site-packages\werkzeug\datastructures\file_storage.py", line 129, in save
+    dst = open(dst, "wb")
+          ^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\31330\\Desktop\\received_screenshots\\2025-10-24\\2025-10-24T15:58:43.789942+00:00_Yinghuo.jpg'
+
+2025-10-24 23:59:55,149 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-24 23:59:55,151 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-24 23:59:55,155 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-24 23:59:55,156 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-24 23:59:55,217 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-24 23:59:55,218 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:00:10,992 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,010 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,011 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,019 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160010.9761790000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,045 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,058 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,060 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,101 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.0278130000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,132 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,144 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,151 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,178 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.1165440000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,214 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,238 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,245 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,309 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.1959610000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,360 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,396 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,407 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,434 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.3440230000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,463 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,486 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,494 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,541 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.4572490000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,582 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,617 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,626 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,673 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.5660590000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,723 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,744 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,748 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,775 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.6921940000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,805 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,829 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,842 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,870 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.7907280000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,906 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:11,926 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:11,938 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:11,966 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.8883260000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:11,998 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:12,028 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:12,031 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:12,044 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160011.9855070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:12,138 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:12,169 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:12,174 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:12,202 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160012.1256000000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:22,360 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:22,371 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:22,373 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:22,399 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160022.3326890000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:32,448 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:32,458 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:32,459 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:32,475 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160032.4346110000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:42,519 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:42,521 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:42,521 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:42,531 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160042.5062420000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:00:52,570 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:00:52,571 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:00:52,571 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:00:52,571 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160052.5517840000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:01:02,603 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:01:02,609 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:01:02,609 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:01:02,620 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160102.5889310000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:01:12,785 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:01:12,802 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:01:12,803 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:01:12,826 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160112.7545290000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:01:22,888 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:01:22,891 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:01:22,892 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:01:22,896 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160122.8788600000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:01:32,993 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:01:32,995 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:01:32,997 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:01:33,002 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T160132.9552560000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:40,702 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:16:40,705 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:16:40,705 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:16:40,705 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:16:40,809 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:16:40,810 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:16:41,895 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:41,898 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:41,898 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:41,900 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161641.8833380000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:41,920 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:41,923 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:41,923 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:41,927 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161641.9093220000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:41,946 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:41,948 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:41,948 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:41,951 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161641.9363870000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:41,968 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:41,970 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:41,970 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:41,973 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161641.9593730000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,024 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:42,026 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:42,026 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:42,028 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161641.9822530000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,069 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:42,072 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:42,072 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:42,073 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161642.0392460000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,088 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:42,089 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:42,089 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:42,090 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161642.0812200000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,109 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:42,111 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:42,111 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:42,113 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161642.1019120000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,147 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:16:42,149 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:16:42,149 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:16:42,151 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161642.1257390000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:16:42,166 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:22,031 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:19:22,033 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:19:22,033 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:19:22,033 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:19:22,221 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:19:22,222 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:19:38,996 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:38,998 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:38,998 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,003 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161938.9667520000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,026 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,029 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,029 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,030 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0060140000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,038 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,041 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,041 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,043 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0340590000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,050 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,052 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,052 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,055 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0465570000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,062 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,064 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,064 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,066 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0580640000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,089 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,092 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,092 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,093 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0702780000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,124 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,131 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,131 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,134 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.0980100000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:39,237 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:39,251 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:39,251 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:39,263 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161939.2111820000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:19:49,386 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:19:49,399 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:19:49,400 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:19:49,408 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T161949.3696120000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:13,257 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:22:13,260 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:22:13,260 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:22:13,260 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:22:13,412 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:22:13,413 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:22:21,803 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,805 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,805 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,810 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.7845600000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:21,849 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,852 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,852 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,853 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.8312360000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:21,880 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,883 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,883 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,884 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.8569870000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:21,910 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,912 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,912 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,914 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.8861380000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:21,941 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,943 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,943 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,945 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.9177510000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:21,972 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:21,974 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:21,974 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:21,976 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162221.9485020000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:31,794 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:31,797 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:31,797 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:31,798 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162231.7724550000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:41,843 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:41,845 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:41,845 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:41,850 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162241.8256080000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:22:51,990 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:22:52,002 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:22:52,003 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:22:52,020 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162251.9716470000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:23:02,026 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:17,458 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:26:17,460 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:26:17,460 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:26:17,460 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:26:17,570 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:26:17,571 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:26:17,948 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:17,949 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:17,950 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:17,951 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162617.9393110000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:17,985 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:17,987 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:17,987 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:17,988 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162617.9570040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,016 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,018 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,018 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,019 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.0067350000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,064 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,067 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,067 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,068 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.0451270000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,093 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,096 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,096 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,100 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.0863620000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,121 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,123 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,124 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,125 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.1156230000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,157 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,160 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,160 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,161 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.1371540000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,190 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,193 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,193 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,195 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.1656120000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,235 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,237 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:18,238 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:26:18,240 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162618.1962580000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:26:18,281 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:18,284 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:26:28,455 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:38,511 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:26:48,715 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,074 - waitress - WARNING - 4 thread(s) still running
+2025-10-25 00:29:03,074 - waitress - WARNING - Canceling 1 pending task(s)
+2025-10-25 00:29:03,119 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:29:03,120 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:29:03,120 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:29:03,120 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:29:03,285 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:29:03,287 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:29:03,453 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,456 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,456 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,457 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.4209620000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,514 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,516 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,516 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,517 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.4876090000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,535 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,537 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,537 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,539 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.5260910000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,579 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,581 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,582 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,583 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.5704120000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,639 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,641 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,642 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,643 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.6183880000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,684 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,686 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,686 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,688 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.6530720000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,715 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,717 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,717 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,718 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.6940950000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,733 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,735 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,735 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,737 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.7247900000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,791 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:29:03,794 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:29:03,794 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:29:03,795 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T162903.7520630000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:29:03,810 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:41,752 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:31:41,755 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:31:41,755 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:31:41,755 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:31:41,830 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:31:41,832 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:31:49,874 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:49,877 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:49,877 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:49,878 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163149.8518230000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:49,895 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:49,897 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:49,898 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:49,899 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163149.8877060000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:49,919 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:49,922 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:49,922 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:49,923 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163149.9113070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:49,942 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:49,945 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:49,945 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:49,946 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163149.9326710000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:49,986 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:49,988 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:49,988 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:49,989 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163149.9543980000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:50,026 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:50,028 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:50,028 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:50,030 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163150.0035450000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:50,046 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:50,049 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:50,049 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:50,050 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163150.0371040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:50,076 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:50,078 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:50,078 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:31:50,079 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163150.0569760000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:31:50,099 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:31:50,101 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:31:50,101 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:33:49,895 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:33:49,898 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:33:49,898 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:33:49,898 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:33:50,026 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:33:50,028 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:34:17,952 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:17,955 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:17,955 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:17,957 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163417.9479730000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:17,984 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:17,987 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:17,987 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:17,990 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163417.9619840000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,015 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,017 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,018 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,019 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163417.9921850000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,049 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,052 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,052 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,055 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163418.0234930000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,079 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,081 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,081 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,082 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163418.0579800000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,109 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,111 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,112 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,113 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163418.0868010000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,118 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,121 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,121 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,122 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163418.1158440000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,139 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,141 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,141 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:34:18,142 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163418.1252210000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:34:18,148 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:34:18,150 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:34:18,150 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,259 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:36:54,261 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:36:54,261 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:36:54,261 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:36:54,389 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:36:54,391 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:36:54,648 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,651 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,651 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,652 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.6370600000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,685 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,687 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,687 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,689 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.6620320000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,718 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,720 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,720 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,722 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.6970230000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,732 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,733 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,733 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,734 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.7281860000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,763 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,765 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,765 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,768 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.7394790000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,778 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,779 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,779 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,779 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.7729740000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,812 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,815 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,815 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,817 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.7840440000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,855 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,857 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:36:54,857 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:36:54,860 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163654.8214550000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:36:54,870 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:36:54,872 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:23,903 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:38:23,905 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:38:23,905 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:38:23,905 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:38:24,012 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:38:24,013 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:38:29,642 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,655 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,655 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,661 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.6237200000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:29,677 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,683 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,684 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,697 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.6672430000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:29,752 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,767 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,767 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,788 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.7041420000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:29,801 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,808 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,808 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,814 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.7944120000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:29,833 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,848 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,849 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,859 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.8175190000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:29,884 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:29,905 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:29,905 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:29,915 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.8639950000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:30,007 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:30,025 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:30,025 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:30,035 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163829.9815920000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:40,132 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:40,139 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:38:40,139 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:38:40,147 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T163840.1251270000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:38:50,182 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:38:50,184 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:40:43,676 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:40:43,678 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:40:43,678 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:40:43,678 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:40:43,781 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:40:43,783 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:42:10,736 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:10,738 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:10,738 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:10,739 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164210.7166340000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:10,765 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:10,768 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:10,768 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:10,770 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164210.7443580000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:10,797 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:10,799 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:10,799 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:10,801 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164210.7739350000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:10,826 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:10,828 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:10,828 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:10,830 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164210.8048000000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:10,951 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:10,953 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:10,953 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:10,954 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164210.9332200000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:21,056 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:21,059 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:21,059 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:21,062 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164221.0511930000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:31,091 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:31,093 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:31,094 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:31,097 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164231.0738700000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:41,246 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:41,248 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:41,248 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:41,249 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164241.2358620000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:42:51,317 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:42:51,320 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:42:51,320 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:42:51,324 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164251.3094100000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:01,373 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:01,374 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:01,374 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:01,375 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164301.3430590000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:11,442 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:11,444 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:11,444 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:11,445 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164311.4231830000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:21,464 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:21,464 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:21,464 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:21,469 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164321.4436200000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:31,445 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:31,450 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:31,450 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:31,458 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164331.4280460000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:41,501 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:41,504 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:41,504 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:41,506 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164341.4962810000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:43:51,597 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:43:51,600 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:43:51,600 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:43:51,603 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164351.5911610000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:01,653 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:01,655 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:01,655 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:01,659 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164401.6455150000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:11,646 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:11,647 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:11,647 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:11,650 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164411.6428320000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:21,656 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:21,657 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:21,657 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:21,659 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164421.6520490000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:31,738 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:31,740 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:31,740 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:31,741 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164431.7334430000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:41,665 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:41,670 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:41,670 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:41,670 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164441.6549140000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:44:51,812 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:44:51,814 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:44:51,814 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:44:51,815 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164451.7982040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:45:20,484 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:45:20,486 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:45:20,486 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:45:20,487 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164520.4616410000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:45:44,510 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:45:44,512 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:45:44,512 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:45:44,512 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:45:44,643 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:45:44,644 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:45:52,876 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:45:52,879 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:45:52,879 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:45:52,881 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164552.8719640000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:48:40,105 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:48:40,108 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:48:40,108 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:48:40,108 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:48:40,202 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:48:40,202 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:48:57,022 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:48:57,025 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:48:57,025 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:48:57,026 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164857.0050750000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:49:07,159 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:49:07,161 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:49:07,161 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:49:07,163 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164907.1412040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:49:17,331 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:49:17,334 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:49:17,334 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:49:17,336 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164917.3282510000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:49:27,418 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:49:27,419 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:49:27,419 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:49:27,421 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164927.4135070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:49:37,313 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:49:37,315 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:49:37,315 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:49:37,317 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T164937.2940080000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:50:12,706 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:50:12,715 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:50:12,715 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:50:12,722 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165012.6770050000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:50:22,876 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:50:22,880 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:50:22,880 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:50:22,887 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165022.8595900000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:50:30,355 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:50:30,355 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:50:30,355 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:50:30,355 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:50:30,582 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:50:30,582 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:50:33,201 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:50:33,205 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:50:33,206 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:50:33,211 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165033.1844880000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:50:43,243 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:50:43,243 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:50:43,243 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:50:43,249 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165043.2399330000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:50:53,308 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:50:53,312 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:50:53,312 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:50:53,318 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165053.2713660000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:03,392 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:03,394 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:03,394 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:03,403 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165103.3868850000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:13,386 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:13,395 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:13,396 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:13,402 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165113.3831270000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:23,489 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:23,492 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:23,492 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:23,499 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165123.4601170000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:33,522 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:33,527 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:33,527 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:33,534 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165133.5168630000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:43,572 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:43,580 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:43,580 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:43,586 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165143.5634390000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:53,425 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:51:53,432 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:51:53,432 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:51:53,441 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165153.4207270000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:51:59,671 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:51:59,673 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:51:59,673 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:51:59,673 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:51:59,779 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:51:59,781 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:52:11,563 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:52:11,565 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:52:11,565 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:52:11,565 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:52:11,767 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:52:11,769 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:52:21,803 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:52:21,811 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:52:21,812 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:52:21,822 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165221.7774280000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:52:31,993 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:52:31,998 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:52:31,998 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:52:32,005 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165231.9902460000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:52:42,089 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:52:42,098 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:52:42,098 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:52:42,102 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165242.0772520000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:52:52,187 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:52:52,193 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:52:52,193 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:52:52,203 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165252.1517890000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:02,304 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:02,317 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:02,318 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:02,332 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165302.2981870000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:12,398 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:12,403 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:12,403 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:12,407 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165312.3915590000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:22,501 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:22,506 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:22,507 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:22,518 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165322.4944020000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:32,478 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:32,484 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:32,484 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:32,490 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165332.4701890000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:42,480 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:42,485 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:42,485 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:42,489 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165342.4748550000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:53:52,595 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:53:52,599 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:53:52,600 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:53:52,607 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165352.5731220000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:02,653 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:02,657 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:02,658 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:02,664 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165402.6469390000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:12,734 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:12,738 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:12,739 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:12,745 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165412.7063980000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:15,967 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:54:15,968 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:54:15,968 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:54:15,968 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:54:16,118 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:54:16,120 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:54:22,778 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:22,789 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:22,789 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:22,796 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165422.7649580000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:28,144 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:54:28,145 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:54:28,145 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:54:28,145 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:54:28,331 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:54:28,333 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:54:32,898 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:32,910 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:32,911 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:32,923 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165432.8786770000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:42,907 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:42,917 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:42,918 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:42,926 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165442.8985200000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:54:52,987 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:54:52,998 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:54:52,998 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:54:53,005 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165452.9709620000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:02,981 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:02,991 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:02,991 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:02,999 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165502.9581840000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:13,071 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:13,079 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:13,080 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:13,083 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165513.0639760000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:23,132 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:23,140 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:23,142 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:23,150 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165523.1009890000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:26,765 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:55:26,767 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:55:26,767 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:55:26,767 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:55:26,923 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:55:26,925 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:55:33,186 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:33,195 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:33,195 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:33,199 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165533.1757220000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:49,131 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:49,137 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:49,137 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:49,140 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165549.1067040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:55:59,322 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:55:59,327 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:55:59,327 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:55:59,329 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165559.3069950000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:09,468 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:09,478 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:09,479 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:09,483 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165609.4522510000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:19,446 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:19,454 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:19,455 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:19,460 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165619.4432280000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:29,722 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:29,728 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:29,728 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:29,737 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165629.7172100000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:39,839 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:39,843 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:39,844 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:39,851 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165639.8312780000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:49,792 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:49,798 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:49,798 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:49,802 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165649.7868970000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:56:59,862 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:56:59,870 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:56:59,870 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:56:59,883 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165659.8405210000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:57:09,915 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:57:09,931 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:57:09,932 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:57:09,938 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165709.9078040000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:57:19,930 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:57:19,935 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:57:19,935 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:57:19,941 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165719.9245480000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:57:29,766 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:57:29,772 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:57:29,772 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:57:29,776 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165729.7617570000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:57:39,968 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:57:39,973 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:57:39,973 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:57:39,979 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165739.9632080000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:57:50,016 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:57:50,021 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:57:50,021 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:57:50,030 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165749.9914230000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:00,012 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:00,022 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:00,023 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:00,032 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165800.0030910000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:04,490 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 00:58:04,493 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 00:58:04,493 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 00:58:04,494 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 00:58:04,651 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 00:58:04,653 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 00:58:10,077 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:10,085 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:10,085 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:10,089 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165810.0696410000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:20,231 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:20,241 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:20,242 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:20,250 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165820.2116930000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:30,412 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:30,424 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:30,424 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:30,435 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165830.4075670000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:40,520 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:40,534 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:40,534 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:40,548 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165840.5017370000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:58:50,785 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:58:50,799 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:58:50,800 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:58:50,807 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165850.7632670000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:00,846 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:00,857 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:00,858 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:00,870 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165900.8394370000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:10,870 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:10,884 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:10,884 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:10,892 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165910.8607220000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:21,081 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:21,092 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:21,092 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:21,099 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165921.0733900000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:31,002 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:31,007 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:31,008 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:31,014 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165930.9966190000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:41,093 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:41,097 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:41,098 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:41,109 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165941.0825070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 00:59:51,097 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 00:59:51,102 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 00:59:51,102 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 00:59:51,108 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T165951.0903780000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:01,173 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:01,178 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:01,179 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:01,184 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170001.1567880000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:11,288 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:11,293 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:11,294 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:11,302 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170011.2633710000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:21,312 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:21,319 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:21,320 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:21,328 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170021.2853170000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:31,304 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:31,308 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:31,308 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:31,312 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170031.2749770000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:41,367 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:41,371 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:41,372 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:41,376 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170041.3610470000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:00:48,481 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:48,482 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:48,483 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:48,487 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-25T005800Z_test.jpg 来自 test
+2025-10-25 01:00:51,516 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:00:51,521 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:00:51,522 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:00:51,530 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170051.5088580000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:01,563 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:01,568 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:01,568 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:01,575 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170101.5571530000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:11,639 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:11,647 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:11,647 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:11,653 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170111.6026870000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:25,409 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:25,419 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:25,419 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:25,427 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170125.3907830000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:32,380 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 01:01:32,382 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 01:01:32,382 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8001
+2025-10-25 01:01:32,382 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 01:01:32,518 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 01:01:32,520 - waitress - INFO - Serving on http://0.0.0.0:8001
+2025-10-25 01:01:35,828 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:35,839 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:35,839 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:35,844 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170135.8203260000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:45,725 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 01:01:45,727 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 01:01:45,727 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8000
+2025-10-25 01:01:45,727 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 01:01:45,825 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 01:01:45,826 - waitress - INFO - Serving on http://0.0.0.0:8000
+2025-10-25 01:01:46,041 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:46,046 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:46,051 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:46,055 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170146.0104390000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:01:54,823 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:01:54,825 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:01:54,826 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:01:54,827 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170154.8164750000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:05,012 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:05,017 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:05,017 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:05,017 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170204.9964940000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:15,116 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:15,118 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:15,118 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:15,118 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170215.0977600000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:25,201 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:25,206 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:25,206 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:25,209 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170225.1863070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:35,290 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:35,290 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:35,290 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:35,290 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170235.2853100000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:45,375 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:45,379 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:45,379 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:45,379 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170245.3535070000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:02:55,466 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:02:55,468 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:02:55,468 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:02:55,470 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170255.4329130000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:03:05,711 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:03:05,722 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:03:05,722 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:03:05,734 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170305.6786680000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:03:15,757 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:03:15,773 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:03:15,774 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:03:15,784 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170315.6990760000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:03:25,765 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:03:25,771 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:03:25,772 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:03:25,784 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170325.7190760000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:03:35,745 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:03:35,759 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:03:35,760 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:03:35,765 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170335.7334170000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:03:45,651 - screenshot_tool.core.server - INFO - 收到上传请求
+2025-10-25 01:03:45,657 - screenshot_tool.core.server - INFO - 请求文件: ['file']
+2025-10-25 01:03:45,659 - screenshot_tool.core.server - INFO - 请求表单: ['timestamp', 'source']
+2025-10-25 01:03:45,666 - screenshot_tool.core.server - INFO - 收到截图: 2025-10-24T170345.6386940000_Yinghuo.jpg 来自 Yinghuo
+2025-10-25 01:04:03,696 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 01:04:03,698 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 01:04:03,698 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8000
+2025-10-25 01:04:03,698 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 01:04:03,790 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 01:04:03,792 - waitress - INFO - Serving on http://0.0.0.0:8000
+2025-10-25 01:04:37,462 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 01:04:37,465 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 01:04:37,465 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8000
+2025-10-25 01:04:37,465 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 01:04:37,541 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 01:04:37,542 - waitress - INFO - Serving on http://0.0.0.0:8000
+2025-10-25 01:05:17,063 - screenshot_tool.core.config - INFO - 成功加载配置文件: config.json
+2025-10-25 01:05:17,065 - screenshot_tool.core.server - INFO - 正在启动截图服务器...
+2025-10-25 01:05:17,066 - screenshot_tool.core.server - INFO - 服务器地址: 0.0.0.0:8000
+2025-10-25 01:05:17,066 - screenshot_tool.core.server - INFO - 存储目录: C:/Users/31330/Desktop/received_screenshots
+2025-10-25 01:05:17,210 - screenshot_tool.core.server - INFO - 使用Waitress WSGI服务器启动...
+2025-10-25 01:05:17,212 - waitress - INFO - Serving on http://0.0.0.0:8000
