@@ -1,0 +1,12 @@
+# 核心依赖
+pillow>=10.4.0
+requests>=2.32.3
+flask>=3.0.3
+schedule>=1.2.2
+waitress>=3.0.2
+
+# 打包依赖
+pyinstaller>=6.0.0
+
+# GUI依赖 (tkinter是Python内置的，不需要安装)
+# tkinter

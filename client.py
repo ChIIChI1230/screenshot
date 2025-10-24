@@ -26,7 +26,6 @@ from typing import Optional, List, Dict, Any
 
 import requests
 from PIL import ImageGrab, Image
-import schedule
 
 
 
@@ -63,7 +62,7 @@ class LocalImageStorage:
         with self.lock:
             # 检查文件数量限制
             if self.get_file_count() >= self.max_files:
-                logging.warning(f"Local storage is full ({self.max_files}), dropping oldest image")
+                logging.warning(f"本地存储已满 ({self.max_files})，删除最旧的图片")
                 self._remove_oldest()
             
             filename = f"{timestamp}_{source}.jpg"
@@ -71,10 +70,10 @@ class LocalImageStorage:
             
             try:
                 filepath.write_bytes(image_bytes)
-                logging.info(f"Image saved locally: {filename}")
+                logging.info(f"图片已保存到本地: {filename}")
                 return True
             except Exception as e:
-                logging.error(f"Failed to save image locally: {e}")
+                logging.error(f"保存图片到本地失败: {e}")
                 return False
     
     def get_pending_images(self) -> List[Path]:
@@ -91,11 +90,11 @@ class LocalImageStorage:
             try:
                 if filepath.exists():
                     filepath.unlink()
-                    logging.info(f"Removed local image: {filepath.name}")
+                    logging.info(f"已删除本地图片: {filepath.name}")
                     return True
                 return False
             except Exception as e:
-                logging.error(f"Failed to remove local image: {e}")
+                logging.error(f"删除本地图片失败: {e}")
                 return False
     
     def _remove_oldest(self):
@@ -125,16 +124,16 @@ class LocalImageStorage:
             for filepath in files_to_remove:
                 try:
                     filepath.unlink()
-                    logging.info(f"Cleaned up old local image: {filepath.name}")
+                    logging.info(f"已清理过期本地图片: {filepath.name}")
                 except Exception as e:
-                    logging.error(f"Failed to clean up old file {filepath.name}: {e}")
+                    logging.error(f"清理过期文件失败 {filepath.name}: {e}")
     
     def clear_all(self):
         """清空所有本地文件"""
         with self.lock:
             for file in self.storage_dir.glob("*.jpg"):
                 file.unlink()
-            logging.info("Local storage cleared")
+            logging.info("本地存储已清空")
 
 
 def setup_logging():
@@ -173,7 +172,7 @@ def load_client_config() -> ClientConfig:
         try:
             data = json.loads(config_path.read_text(encoding="utf-8"))
         except Exception as e:
-            logging.warning(f"Failed to load config: {e}, using defaults")
+            logging.warning(f"加载配置失败: {e}，使用默认配置")
     c = data.get("client", {})
     return ClientConfig(
         server_url=str(c.get("server_url", "http://127.0.0.1:8000/upload")),
@@ -194,18 +193,30 @@ def load_client_config() -> ClientConfig:
 def check_server_connection(config: ClientConfig) -> bool:
     """检查服务器是否可用"""
     try:
-        # 尝试连接服务器
+        # 尝试连接健康检查端点
         response = requests.get(
             config.server_url.replace('/upload', '/health'), 
             timeout=config.connection_timeout
         )
-        return response.status_code == 200
-    except requests.exceptions.RequestException:
-        # 如果健康检查端点不存在，尝试HEAD请求到upload端点
+        if response.status_code == 200:
+            logging.debug("服务器健康检查通过")
+            return True
+        else:
+            logging.debug(f"服务器健康检查失败: {response.status_code}")
+            return False
+    except requests.exceptions.RequestException as e:
+        logging.debug(f"健康检查端点连接失败: {e}")
+        # 如果健康检查端点不可用，尝试连接upload端点
         try:
             response = requests.head(config.server_url, timeout=config.connection_timeout)
-            return True
-        except requests.exceptions.RequestException:
+            if response.status_code in [200, 405]:  # 405表示方法不允许，但服务器可用
+                logging.debug(f"upload端点连接成功: {response.status_code}")
+                return True
+            else:
+                logging.debug(f"upload端点连接失败: {response.status_code}")
+                return False
+        except requests.exceptions.RequestException as e:
+            logging.debug(f"upload端点连接异常: {e}")
             return False
 
 
@@ -250,42 +261,43 @@ def send_screenshot(image_bytes: bytes, config: ClientConfig) -> Optional[reques
                 timeout=config.connection_timeout
             )
             if resp.status_code == 200:
-                logging.info(f"Screenshot uploaded successfully: {resp.status_code}")
+                logging.info(f"截图上传成功: {resp.status_code}")
+                logging.info(f"截图已发送到服务器: {timestamp}_{hostname}.jpg")
                 return resp
             else:
-                logging.warning(f"Server returned status {resp.status_code}")
+                logging.warning(f"服务器返回状态 {resp.status_code}")
                 if attempt < config.max_retries:
-                    logging.info(f"Retrying in {config.retry_delay} seconds... (attempt {attempt + 1}/{config.max_retries})")
+                    logging.info(f"在 {config.retry_delay} 秒后重试... (尝试 {attempt + 1}/{config.max_retries})")
                     time.sleep(config.retry_delay)
                 else:
-                    logging.error(f"Failed to upload after {config.max_retries} retries")
+                    logging.error(f"重试 {config.max_retries} 次后上传失败")
                     return None
                     
         except requests.exceptions.ConnectionError as e:
-            logging.error(f"Connection error (attempt {attempt + 1}/{config.max_retries + 1}): {e}")
+            logging.error(f"连接错误 (尝试 {attempt + 1}/{config.max_retries + 1}): {e}")
             if attempt < config.max_retries:
-                logging.info(f"Retrying in {config.retry_delay} seconds...")
+                logging.info(f"在 {config.retry_delay} 秒后重试...")
                 time.sleep(config.retry_delay)
             else:
-                logging.error("Server appears to be down")
+                logging.error("服务器似乎已关闭")
                 return None
                 
         except requests.exceptions.Timeout as e:
-            logging.error(f"Request timeout (attempt {attempt + 1}/{config.max_retries + 1}): {e}")
+            logging.error(f"请求超时 (尝试 {attempt + 1}/{config.max_retries + 1}): {e}")
             if attempt < config.max_retries:
-                logging.info(f"Retrying in {config.retry_delay} seconds...")
+                logging.info(f"在 {config.retry_delay} 秒后重试...")
                 time.sleep(config.retry_delay)
             else:
-                logging.error("Request timeout after all retries")
+                logging.error("所有重试后请求超时")
                 return None
                 
         except Exception as e:
-            logging.error(f"Unexpected error (attempt {attempt + 1}/{config.max_retries + 1}): {e}")
+            logging.error(f"意外错误 (尝试 {attempt + 1}/{config.max_retries + 1}): {e}")
             if attempt < config.max_retries:
-                logging.info(f"Retrying in {config.retry_delay} seconds...")
+                logging.info(f"在 {config.retry_delay} 秒后重试...")
                 time.sleep(config.retry_delay)
             else:
-                logging.error("Unexpected error after all retries")
+                logging.error("所有重试后出现意外错误")
                 return None
     
     return None
@@ -298,7 +310,10 @@ def upload_local_images(local_storage: LocalImageStorage, config: ClientConfig) 
     if not pending_images:
         return
     
-    logging.info(f"Found {len(pending_images)} local images to upload")
+    logging.info(f"发现 {len(pending_images)} 个本地图片待上传")
+    
+    success_count = 0
+    fail_count = 0
     
     for filepath in pending_images:
         try:
@@ -311,6 +326,8 @@ def upload_local_images(local_storage: LocalImageStorage, config: ClientConfig) 
                 # 如果文件名格式不正确，使用文件修改时间
                 timestamp = datetime.fromtimestamp(filepath.stat().st_mtime, tz=timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
                 source = socket.gethostname()
+            
+            logging.info(f"正在上传本地图片: {filename}")
             
             # 读取图片数据
             image_bytes = filepath.read_bytes()
@@ -327,59 +344,84 @@ def upload_local_images(local_storage: LocalImageStorage, config: ClientConfig) 
             )
             
             if resp.status_code == 200:
-                logging.info(f"Local image uploaded successfully: {filename}")
+                logging.info(f"本地图片上传成功: {filename}")
                 local_storage.remove_image(filepath)
+                success_count += 1
             else:
-                logging.warning(f"Failed to upload local image {filename}: {resp.status_code}")
+                logging.warning(f"上传本地图片失败 {filename}: {resp.status_code}")
+                fail_count += 1
                 # 上传失败时保留文件，下次再试
                 
         except Exception as e:
-            logging.error(f"Error uploading local image {filepath.name}: {e}")
+            logging.error(f"上传本地图片时出错 {filepath.name}: {e}")
+            fail_count += 1
             # 出错时保留文件，下次再试
+    
+    # 总结上传结果
+    if success_count > 0 or fail_count > 0:
+        logging.info(f"本地图片上传完成: 成功 {success_count} 个，失败 {fail_count} 个")
 
 
 def job_once(config: ClientConfig, local_storage: Optional[LocalImageStorage] = None) -> None:
     """执行一次截图与上传流程。"""
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    hostname = socket.gethostname()
+    
     try:
+        logging.info(f"开始截图任务: {timestamp}")
+        
         # 先截取屏幕
         img = capture_primary_monitor()
         image_bytes = encode_image(img, config.image_format, config.jpeg_quality)
+        logging.info(f"截图完成，图片大小: {len(image_bytes)} 字节")
         
         # 保存本地副本（如果配置了）
         if config.save_local_copy:
             config.local_output_dir.mkdir(parents=True, exist_ok=True)
-            ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
-            (config.local_output_dir / f"{ts}.jpg").write_bytes(image_bytes)
-            logging.info(f"Screenshot saved locally: {config.local_output_dir / f'{ts}.jpg'}")
+            local_file = config.local_output_dir / f"{timestamp}.jpg"
+            local_file.write_bytes(image_bytes)
+            logging.info(f"截图已保存到本地: {local_file}")
         
         # 检查服务器连接
         if not check_server_connection(config):
-            logging.warning("Server is not available, saving screenshot locally")
+            logging.warning("服务器不可用，正在保存截图到本地存储")
             # 服务器不可用时，保存到本地存储
             if local_storage:
-                timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
-                hostname = socket.gethostname()
                 if local_storage.save_image(image_bytes, timestamp, hostname):
-                    logging.info("Screenshot saved to local storage for later upload")
+                    logging.info(f"截图已保存到本地存储: {timestamp}_{hostname}.jpg")
+                    logging.info("等待服务器恢复后自动上传")
                 else:
-                    logging.error("Failed to save screenshot to local storage")
+                    logging.error("保存截图到本地存储失败")
+            else:
+                logging.error("本地存储未启用，截图丢失")
             return
         
-        # 服务器可用时，尝试上传
-        if send_screenshot(image_bytes, config):
-            logging.info("Screenshot uploaded successfully")
+        # 服务器可用时，先尝试上传本地图片
+        if local_storage and local_storage.get_file_count() > 0:
+            logging.info("服务器可用，正在上传本地图片...")
+            upload_local_images(local_storage, config)
+        
+        # 然后上传当前截图
+        logging.info("正在上传当前截图...")
+        result = send_screenshot(image_bytes, config)
+        
+        if result:
+            logging.info(f"截图上传成功: {timestamp}_{hostname}.jpg")
         else:
+            logging.warning("截图上传失败，正在保存到本地存储")
             # 上传失败，保存到本地
             if local_storage:
-                timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
-                hostname = socket.gethostname()
                 if local_storage.save_image(image_bytes, timestamp, hostname):
-                    logging.info("Upload failed, screenshot saved to local storage")
+                    logging.info(f"截图已保存到本地存储: {timestamp}_{hostname}.jpg")
+                    logging.info("等待服务器恢复后自动上传")
                 else:
-                    logging.error("Upload failed and failed to save locally")
+                    logging.error("上传失败且保存到本地也失败")
+            else:
+                logging.error("上传失败且本地存储未启用，截图丢失")
         
     except Exception as e:
-        logging.error(f"Error in job_once: {e}")
+        logging.error(f"截图任务失败: {e}")
+        logging.error(f"任务时间戳: {timestamp}")
         # 即使出错也继续运行，不中断定时任务
 
 
@@ -390,7 +432,7 @@ shutdown_requested = False
 def signal_handler(signum, frame):
     """处理中断信号，实现优雅关闭"""
     global shutdown_requested
-    logging.info("Received shutdown signal, stopping gracefully...")
+    logging.info("收到关闭信号，正在优雅停止...")
     shutdown_requested = True
 
 
@@ -400,14 +442,18 @@ def run_client() -> None:
     
     # 设置日志
     setup_logging()
-    logging.info("Starting screenshot client...")
+    logging.info("正在启动截图客户端...")
     
-    # 设置信号处理
-    signal.signal(signal.SIGINT, signal_handler)   # Ctrl+C
-    signal.signal(signal.SIGTERM, signal_handler)  # 终止信号
+    # 设置信号处理（仅在主线程中设置）
+    try:
+        signal.signal(signal.SIGINT, signal_handler)   # Ctrl+C
+        signal.signal(signal.SIGTERM, signal_handler)  # 终止信号
+    except ValueError:
+        # 在非主线程中无法设置信号处理，这是正常的
+        logging.info("在GUI环境中运行，跳过信号处理设置")
     
     config = load_client_config()
-    logging.info(f"Client configuration loaded: {config.server_url}")
+    logging.info(f"客户端配置已加载: {config.server_url}")
     
     # 初始化本地存储
     local_storage = LocalImageStorage(
@@ -419,52 +465,61 @@ def run_client() -> None:
     # 检查本地存储状态
     local_file_count = local_storage.get_file_count()
     if local_file_count > 0:
-        logging.info(f"Found {local_file_count} local images from previous session")
+        logging.info(f"发现 {local_file_count} 个本地图片来自上次会话")
     else:
-        logging.info("No local images found")
+        logging.info("未发现本地图片")
     
     # 检查初始连接
     if not check_server_connection(config):
-        logging.warning("Server is not available at startup, but will continue trying...")
+        logging.warning("启动时服务器不可用，但将继续尝试...")
     else:
-        logging.info("Server connection verified")
+        logging.info("服务器连接已验证")
         # 服务器可用时，尝试上传本地图片
         if local_file_count > 0:
-            logging.info("Server is available, uploading local images...")
+            logging.info("服务器可用，正在上传本地图片...")
             upload_local_images(local_storage, config)
     
-    schedule.clear()
-    schedule.every(config.interval_seconds).seconds.do(job_once, config=config, local_storage=local_storage)
+    # 使用精确的时间控制替代schedule
+    start_time = time.time()
+    last_execution_time = start_time
+    cleanup_counter = 0
     
     # 立即执行一次
-    logging.info("Running initial screenshot...")
+    logging.info("正在执行初始截图...")
     job_once(config, local_storage)
     
-    logging.info(f"Client started, taking screenshots every {config.interval_seconds} seconds")
-    logging.info("Press Ctrl+C to stop gracefully")
+    logging.info(f"客户端已启动，每 {config.interval_seconds} 秒截图一次")
+    logging.info("按 Ctrl+C 优雅停止")
     
     try:
         while not shutdown_requested:
-            schedule.run_pending()
+            current_time = time.time()
+            
+            # 检查是否到了执行时间
+            if current_time - last_execution_time >= config.interval_seconds:
+                job_once(config, local_storage)
+                last_execution_time = current_time
             
             # 定期清理过期文件和尝试上传本地图片（每5分钟检查一次）
-            if local_storage:
-                local_storage.cleanup_old_files()
-                # 如果服务器可用，尝试上传本地图片
-                if check_server_connection(config):
-                    upload_local_images(local_storage, config)
+            cleanup_counter += 1
+            if cleanup_counter >= 600:  # 600 * 0.5 = 300秒 = 5分钟
+                cleanup_counter = 0
+                if local_storage:
+                    local_storage.cleanup_old_files()
+                    # 如果服务器可用，尝试上传本地图片
+                    if check_server_connection(config):
+                        upload_local_images(local_storage, config)
             
             time.sleep(0.5)
     except KeyboardInterrupt:
-        logging.info("Keyboard interrupt received")
+        logging.info("收到键盘中断信号")
     finally:
-        logging.info("Client stopped gracefully")
-        schedule.clear()
+        logging.info("客户端已优雅停止")
         
         # 显示本地存储状态
         local_file_count = local_storage.get_file_count()
         if local_file_count > 0:
-            logging.info(f"Local storage contains {local_file_count} images that will be processed on next startup")
+            logging.info(f"本地存储包含 {local_file_count} 个图片，将在下次启动时处理")
 
 
 if __name__ == "__main__":

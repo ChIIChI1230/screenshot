@@ -14,12 +14,32 @@ import logging
 import datetime as dt
 from pathlib import Path
 from typing import Tuple
+from dataclasses import dataclass
 
 from flask import Flask, request, jsonify
 import json
 
 
-def load_server_config() -> Tuple[str, int, Path]:
+def setup_logging():
+    """设置日志配置"""
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler('server.log', encoding='utf-8')
+        ]
+    )
+
+
+@dataclass
+class ServerConfig:
+    host: str
+    port: int
+    storage_dir: Path
+
+
+def load_server_config() -> ServerConfig:
     """从 `config.json` 读取服务器配置，失败则采用内置默认值。"""
     config_path = Path(__file__).with_name("config.json")
     host = "0.0.0.0"
@@ -32,11 +52,11 @@ def load_server_config() -> Tuple[str, int, Path]:
             host = str(srv.get("host", host))
             port = int(srv.get("port", port))
             storage_dir = Path(str(srv.get("storage_dir", str(storage_dir))))
-        except Exception:
+        except Exception as e:
             # Use defaults on any config error
-            logging.error("Error loading server config: %s", e)
+            logging.error("加载服务器配置错误: %s", e)
             pass
-    return host, port, storage_dir
+    return ServerConfig(host=host, port=port, storage_dir=storage_dir)
 
 
 app = Flask(__name__)
@@ -62,9 +82,10 @@ def upload():
     ts = request.form.get("timestamp")
     source = request.form.get("source", "client")
 
-    host, port, storage_dir = load_server_config()
+    config = load_server_config()
+    storage_dir = config.storage_dir
     # Ensure date-based directories
-    now = dt.datetime.utcnow()
+    now = dt.datetime.now(dt.timezone.utc)
     date_dir = storage_dir / now.strftime("%Y-%m-%d")
     date_dir.mkdir(parents=True, exist_ok=True)
 
@@ -76,14 +97,19 @@ def upload():
     target = date_dir / fname
 
     file.save(target)
+    logging.info(f"收到截图: {fname} 来自 {source}")
 
     return jsonify({"status": "ok", "path": str(target)})
 
 
 def run_server() -> None:
     """启动 Flask 服务器。"""
-    host, port, _ = load_server_config()
-    app.run(host=host, port=port)
+    setup_logging()
+    config = load_server_config()
+    logging.info(f"正在启动截图服务器...")
+    logging.info(f"服务器地址: {config.host}:{config.port}")
+    logging.info(f"存储目录: {config.storage_dir}")
+    app.run(host=config.host, port=config.port)
 
 
 if __name__ == "__main__":
