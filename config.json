@@ -1,6 +1,6 @@
 {
   "client": {
-    "server_url": "http://127.0.0.1:8000/upload",
+    "server_url": "http://192.168.2.95:8000/upload",
     "interval_seconds": 10,
     "image_format": "JPEG",
     "jpeg_quality": 96,
